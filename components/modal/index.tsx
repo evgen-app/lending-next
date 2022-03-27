@@ -1,13 +1,15 @@
 import Link from 'next/link'
 import styles from './Modal.module.css'
-import react from "react"
+import react, { useState } from "react"
 import Image from 'next/image'
 
-export const Modal:React.FC = () =>{
+export const Modal:React.FC<{show:boolean, setShow:(a:boolean)=>void }> = (props) =>{
+
+
     return(
-            <div className={styles.modal} style={{display: "flex"}} id="questInfo">
+            <div className={styles.modal} style={{display:props.show? "flex":"none"}} id="questInfo">
                 <div className={styles.modalCard}>
-                    <button id="modalButton" className={styles.modalButton}>
+                    <button id="modalButton" className={styles.modalButton} onClick={()=>props.setShow(false)}>
                         <img src="/images/cross.svg"/>
                     </button>
                     <h1>Спаси корабль</h1>
@@ -47,7 +49,7 @@ export const Modal:React.FC = () =>{
                         </ul>
                     </div>
                     <h2>Фото</h2>
-                    <img src="/images/mockups.png"   />
+                    <img src="/images/mockups.png"/>
                 </div>
             </div> 
     );

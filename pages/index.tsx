@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import { useState } from 'react'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { Header } from '../components/header'
@@ -11,6 +12,8 @@ import { Contacts } from '../components/contacts'
 import { MyFooter } from '../components/footer'
 import { Rings } from '../components/rings'
 const Home: NextPage = () => {
+  let [showModal, setShowModal] = useState(false)
+  
   return (
     <div className={styles.container}>
       <Head>
@@ -21,9 +24,10 @@ const Home: NextPage = () => {
 
       <main>
         <Header></Header>
+        <Modal setShow={(a:boolean)=>setShowModal(a)} show={showModal}></Modal>
         <div className={styles.content}>
           <Main></Main>
-          <Solution></Solution>
+          <Solution onAboutClick={()=> setShowModal(!showModal)}></Solution>
           <Team></Team>
           <Contacts></Contacts>
           <MyFooter></MyFooter>

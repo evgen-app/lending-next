@@ -2,9 +2,14 @@ import styles from './Solution.module.css'
 import React from "react"
 import Link from 'next/link';
 
-export const Solution:React.FC = () =>{
+interface SolutionIE{
+    onAboutClick: () => void
+    onBuyClick?: ()=> void
+}
+
+export const Solution:React.FC<SolutionIE> = (props) =>{
     return(
-        <div className={styles.solution} id="buy"  >
+        <div className={styles.solution} id="buy">
         <h1 >Что мы предлагаем</h1>
         <h2 >Приедем к вам - соберем квест</h2>
         <div className={styles.carousel} >
@@ -26,8 +31,11 @@ export const Solution:React.FC = () =>{
 
                     </div>
                 </div>
-                <button className={styles.btn}>Подробнее</button>
+                <button onClick={()=>props.onAboutClick()} className={styles.btn}>Подробнее</button>
+               <Link href={"#contacts"}>
                 <button className={styles.btn}>купить</button>
+
+               </Link>
 
             </div>
             <div className={styles.card} style={{justifyContent: "center"}}>
