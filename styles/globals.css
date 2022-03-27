@@ -14,3 +14,24 @@ a {
     font-family: 'Inconsolata', monospace;
 
 }
+
+body{
+  background: #FAFAFA;
+  overflow-x: hidden;
+}
+
+html::-webkit-scrollbar, .modal::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f9f9fd;
+}
+
+html::-webkit-scrollbar-thumb, .modal::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #FFCB7F;
+}
+
+html::-webkit-scrollbar-track,  .modal::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  background-color: #f9f9fd;
+}

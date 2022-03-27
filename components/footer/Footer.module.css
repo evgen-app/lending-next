@@ -1,0 +1,27 @@
+.footer{
+    padding: 10px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
+    border-radius: 15px 15px 0px 0px;
+    width: 100%;
+    right: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.copyright{
+    position: relative;
+    margin-right: 40%;  
+}
+
+.socMedia{
+    width: 70%;
+}
+.socMedia:hover{
+    width: 85%;
+}

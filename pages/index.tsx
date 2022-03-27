@@ -6,7 +6,10 @@ import { Header } from '../components/header'
 import { Modal } from '../components/modal'
 import { Main } from '../components/main'
 import { Solution } from '../components/solution'
-
+import { Team } from '../components/team'
+import { Contacts } from '../components/contacts'
+import { MyFooter } from '../components/footer'
+import { Rings } from '../components/rings'
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
@@ -21,8 +24,11 @@ const Home: NextPage = () => {
         <div className={styles.content}>
           <Main></Main>
           <Solution></Solution>
-
+          <Team></Team>
+          <Contacts></Contacts>
+          <MyFooter></MyFooter>
         </div>
+        <Rings></Rings>
       </main>
     </div>
   )
