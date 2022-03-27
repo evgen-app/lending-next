@@ -1,0 +1,60 @@
+.card_grade{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.modal{
+    position: fixed;
+
+    z-index: 101;
+    width: 100%;
+    height: Calc(100vh + 100px);
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -100px;
+    margin-left: -10px;
+    overflow-y: scroll;
+}
+.modalCard{
+    padding: 25px;
+    margin-top: 45%;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    border-radius: 15px;
+    z-index: 102;
+    background-color: #fff ;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalButton{
+    margin-left:90%;
+    border:none;
+    outline: none;
+    cursor: pointer;
+    background-color: white;
+}
+.modalButton:hover{
+    opacity: 0.6;
+}
+
+.modal::-webkit-scrollbar {
+    width: 10px;
+    background-color: #f9f9fd;
+  }
+  
+.modal::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #FFCB7F;
+  }
+  
+.modal::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    background-color: #f9f9fd;
+  }
+
