@@ -38,7 +38,7 @@ export const Solution:React.FC<SolutionIE> = (props) =>{
                </Link>
 
             </div>
-            <div className={styles.card} style={{justifyContent: "center"}}>
+            <div className={styles.card + " " + styles.cardVisible} style={{justifyContent: "center"}}>
                 Coming soon...
             </div>
         </div>

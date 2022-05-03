@@ -53,6 +53,7 @@
     justify-content: center;
     flex-direction: column;
 }
+
 .team{
     font-family: 'Inconsolata', monospace;
     color: #323232;
@@ -66,6 +67,7 @@
 }
 
 
+
 .carouselAvatar{
     display: flex;
     flex-direction: row;
@@ -73,4 +75,40 @@
     margin-top:5%;
     justify-content: center;
     align-items: center;
+}
+@media (max-width: 1150px){
+    .carouselAvatar{
+        flex-direction: column ;   
+    }
+    .danya{
+        margin-top: -250px;
+    }
+    .ilArrow{
+        width: 55%;
+
+        top: -50px;
+        transform:  rotate(-25deg);
+        left: 27%
+
+    }
+    .ilText{
+        left: -30%
+    }
+    .denArrow{
+        width: 55%;
+        left: -35%;
+        transform: scale(-1, 1) rotate(-35deg);
+    }
+    .denText{
+        top: -170px;
+        left:15%
+    }
+
+}
+
+@media (max-width: 500px) {
+    .team{
+        padding-top: 50%;
+
+    }
 }

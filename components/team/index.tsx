@@ -32,7 +32,7 @@ export const Team:React.FC =  () => {
                         </div>
                     </div>
                 </div>
-                <div className={styles.person}>
+                <div className={styles.person + " " + styles.danya} >
                     <img className={styles.avatar}  src="/images/Danil.png"/>
                     <img className={styles.denArrow} src="/images/arrow.svg"/>
                     <div className={styles.denText}>

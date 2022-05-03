@@ -19,9 +19,21 @@
     margin-right: 40%;  
 }
 
-.socMedia{
-    width: 70%;
-}
 .socMedia:hover{
-    width: 85%;
+    transform: scale(1.1);
 }
+@media (max-width: 500px){
+    .socMedia{
+        width: 52px;
+    }
+    .copyright{
+        margin-right: 10%;
+        height: 24px;
+        width: 50px;
+        overflow: hidden;
+    }
+
+}
+
+
+
