@@ -16,7 +16,9 @@ html{
     font-family: 'Inconsolata', monospace;
 
 }
-
+h1,h2{
+  text-align: center;
+}
 body{
   background: #FAFAFA;
   overflow-x: hidden;

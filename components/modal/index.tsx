@@ -49,7 +49,7 @@ export const Modal:React.FC<{show:boolean, setShow:(a:boolean)=>void }> = (props
                         </ul>
                     </div>
                     <h2>Фото</h2>
-                    <img src="/images/mockups.png"/>
+                    <img className={styles.img} src="/images/mockups.png"/>
                 </div>
             </div> 
     );

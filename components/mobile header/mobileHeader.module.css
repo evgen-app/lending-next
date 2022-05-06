@@ -60,3 +60,39 @@
     border:none;
     background-color: transparent;
 }
+
+@media (max-width: 385px){
+    .text{
+        margin-left: 40px;
+    }
+    .btn{
+        margin-left:-60%;
+    }
+
+}
+
+@media (max-width: 300px){
+    .text{
+        margin-left: 40px;
+    }
+    .btn{
+        margin-left:-30%;
+    }
+
+}
+@media (max-width: 300px){
+    .text{
+        margin-left: 40px;
+    }
+    .btn{
+        margin-left:-30%;
+    }
+
+}
+
+@media (max-width: 260px){
+    .menu{
+        font-size: 20px;
+    }
+
+}

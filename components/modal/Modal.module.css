@@ -58,3 +58,15 @@
     background-color: #f9f9fd;
   }
 
+.img{
+}
+
+@media (max-width: 800px){
+    .modalButton{
+        margin-left: 100;
+    }
+   .img{
+       width: 60%;
+       padding-bottom: 200px;
+   }
+}
